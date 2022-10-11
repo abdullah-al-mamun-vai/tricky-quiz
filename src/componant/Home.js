@@ -6,7 +6,6 @@ import Subject from './Subject';
 
 const Home = () => {
   const subject = useLoaderData();
-  const sub = subject.data;
   return (
     <div>
       <div className="relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0">
@@ -55,7 +54,7 @@ const Home = () => {
       </div>
       <div className='grid grid-cols-3 gap-3 my-10'>
         {
-          sub.map(subject => <Subject subject={subject} key={subject.id}></Subject>)
+          subject.data.map(sub => <Subject subject={sub} key={sub.id}></Subject>)
         }
       </div>
     </div>
