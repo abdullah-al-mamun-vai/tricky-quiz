@@ -45,7 +45,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="/"
+                href="/statistics"
                 aria-label="Our product"
                 title="Our product"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
@@ -55,12 +55,12 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="/"
+                href="/Blog"
                 aria-label="Product pricing"
                 title="Product pricing"
                 className="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
               >
-                blog
+                Blog
               </a>
             </li>
           </ul>
@@ -147,7 +147,7 @@ const Header = () => {
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="/statistics"
                           aria-label="Our product"
                           title="Our product"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
@@ -157,7 +157,7 @@ const Header = () => {
                       </li>
                       <li>
                         <a
-                          href="/"
+                          href="/blog"
                           aria-label="Product pricing"
                           title="Product pricing"
                           className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"

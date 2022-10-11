@@ -11,7 +11,7 @@ const Loadquiz = ({ single }) => {
             </div>
 
             {
-                options.map(single => <label className='block bg-green-500 my-2' htmlFor=''><input type="radio" name={id} id={id} />{single}</label>)
+                options.map(single => <label className='block bg-green-500 my-2' htmlFor='first'><input type="radio" name='first' id={id} />{single}</label>)
             }
         </div>
     );
