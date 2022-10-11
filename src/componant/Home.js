@@ -57,6 +57,9 @@ const Home = () => {
           subject.data.map(sub => <Subject subject={sub} key={sub.id}></Subject>)
         }
       </div>
+
+
+
     </div>
   );
 };

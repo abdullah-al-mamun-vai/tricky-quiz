@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Subject = ({ subject }) => {
+    console.log(subject)
     const { name, logo, total, id } = subject;
     console.log(subject)
     return (
@@ -14,7 +15,7 @@ const Subject = ({ subject }) => {
 
                 <div className="card-actions justify-evenly w-full">
                     <p className='text-left'>total: {total}</p>
-                    <Link to={'subject/${id}'} className="btn btn-primary">Buy Now</Link>
+                    <Link to={`/subject/${id}`} className="btn btn-primary">Buy Now</Link>
                 </div>
             </div>
         </div >
