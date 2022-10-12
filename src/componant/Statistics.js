@@ -5,7 +5,6 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 const Statistics = () => {
     const data = useLoaderData();
     const chart = data.data;
-    console.log(chart)
     return (
         <div className=' h-96 container mx-auto '>
             <ResponsiveContainer width="100%" height="100%">
@@ -17,7 +16,7 @@ const Statistics = () => {
                     <YAxis />
                     <Tooltip />
                     <Legend />
-                    <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                    <Line type="monotone" dataKey="total" stroke="rgb(194 65 12)" />
                 </LineChart>
             </ResponsiveContainer>
         </div >

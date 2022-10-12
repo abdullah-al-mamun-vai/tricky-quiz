@@ -1,7 +1,6 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import Loadquiz from './Loadquiz';
-
 const Quiz = () => {
     const ourQuiz = useLoaderData();
     const singleQuiz = ourQuiz.data.questions;
@@ -14,9 +13,10 @@ const Quiz = () => {
                 }
             </div>
             <div>
-                <div className='bg-slate-300 sticky top-0 left-0 mt-8'>
-                    <h3>two</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum perspiciatis repellendus dolorum, facilis totam unde autem tenetur minima possimus exercitationem dolores ea! Ducimus ea sequi vero perferendis id a vel.</p>
+                <div className='bg-orange-700 p-2 sticky top-0 left-0 my-2 mx-2 text-white rounded'>
+                    <h1>Quiz Ordinary: </h1>
+                    <h3>Total Quizes:{singleQuiz.length}</h3>
+                    <p>Quizzes encourage pupils' self awareness of progress and self assessment. By taking quizzes, pupils get instant feedback on their responses. And this can help them identify areas they need to develop themselves and highlight progress for them to be proud of.</p>
                 </div>
             </div>
         </div>

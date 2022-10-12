@@ -12,7 +12,7 @@ const Home = () => {
         <div className="flex flex-col items-start w-full max-w-xl px-4 mx-auto lg:px-8 lg:max-w-screen-xl">
           <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
             <div className="max-w-xl mb-6">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
                 A good general knowledge
                 <br className="hidden md:block" />
                 quiz has a lot to offer. They’re fun, keep your brain {' '}
@@ -20,7 +20,7 @@ const Home = () => {
                   sharp and best of all, they suit any occasion.
                 </span>
               </h2>
-              <p className="text-base text-gray-700 md:text-lg">
+              <p className="text-base text-white md:text-lg">
                 we recognise the universal power of trivia. We’ve even made it our mission to get as many people quizzing as we possibly can. That’s why we’ve compiled 50 of the best general knowledge quiz questions and answers for you to answer yourself or play with others.
               </p>
             </div>
