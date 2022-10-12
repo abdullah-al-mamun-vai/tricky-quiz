@@ -1,11 +1,12 @@
 import React from 'react';
 import Lottie from "lottie-react";
-import headerImg from "./img/headerImg.json";
 import { useLoaderData } from 'react-router-dom';
+import headerImg from "./img/headerImg.json";
 import Subject from './Subject';
 
 const Home = () => {
   const subject = useLoaderData();
+  console.log(subject)
   return (
     <div>
       <div className="relative flex flex-col py-16 lg:pt-0 lg:flex-col lg:pb-0">
@@ -54,7 +55,7 @@ const Home = () => {
       </div>
       <div className='grid grid-cols-3 gap-3 my-10'>
         {
-          subject.data.map(sub => <Subject subject={sub} key={sub.id}></Subject>)
+          subject.data.map(sub => <Subject subjects={sub} key={sub.id}></Subject>)
         }
       </div>
 

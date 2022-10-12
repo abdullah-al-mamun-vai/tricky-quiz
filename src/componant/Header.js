@@ -4,7 +4,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 border-b border-b-orange-600">
       <div className="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div className="relative flex items-center justify-between">
           <a
@@ -29,7 +29,7 @@ const Header = () => {
               <rect x="14" y="11" width="7" height="12" />
             </svg>
             <span className="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
-              Company
+              Tr<span className='text-orange-600'>ic</span>ky iz
             </span>
           </a>
           <ul className="flex items-center hidden space-x-8 lg:flex">
@@ -172,7 +172,7 @@ const Header = () => {
             )}
           </div>
         </div>
-      </div>
+      </div>''
     </div>
 
 

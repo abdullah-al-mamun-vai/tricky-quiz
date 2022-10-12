@@ -2,18 +2,25 @@ import React, { useState } from 'react';
 
 const Loadquiz = ({ single }) => {
     // console.log(single)
-    const { question, options, id } = single;
-    const [count, setCount] = useState(0);
+    const { question, options, id, correctAnswer } = single;
+    const handleAns = (data) => {
+        console.log(2)
+    }
+    const [count, setCount] = useState('0');
+    if (count === single.correctAnswer) {
+        alert('right')
+    }
     return (
         <div className='col-span-2 my-3 bg-slate-400'>
             <div>
                 {question}
             </div>
-
-            {
-                options.map(single => <label className='block bg-green-500 my-2' htmlFor='first'><input type="radio" name='first' id={id} />{single}</label>)
-            }
-        </div>
+            <div className='flex flex-col'>
+                {
+                    options.map(option => <button onClick={() => setCount(option)} className={`bg-green-500 my-2 ${option === correctAnswer ? ' focus:bg-zinc-900' : 'focus:bg-red-600'}`}>{option}</button>)
+                }
+            </div>
+        </div >
     );
 };
 
