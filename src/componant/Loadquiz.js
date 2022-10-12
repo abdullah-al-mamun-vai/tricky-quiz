@@ -2,13 +2,14 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEye } from '@fortawesome/free-solid-svg-icons'
 import Swal from 'sweetalert2'
-const Loadquiz = ({ single, countMistake, setCountMistake }) => {
+const Loadquiz = ({ single }) => {
     const { question, options, correctAnswer } = single;
     const rightAns = correctAnswer.charAt(0).toUpperCase() + correctAnswer.slice(1);
     const [count, setCount] = useState([]);
     const handleAns = () => {
         if (correctAnswer) {
             Swal.fire(
+                'correct ans is:',
                 rightAns
             )
         }
