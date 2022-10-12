@@ -7,7 +7,7 @@ const Statistics = () => {
     const chart = data.data;
     console.log(chart)
     return (
-        <div className='w-full h-96 container mx-auto '>
+        <div className=' h-96 container mx-auto '>
             <ResponsiveContainer width="100%" height="100%">
                 <LineChart width={200}
                     height={300}
