@@ -1,21 +1,6 @@
 import React from 'react';
-const first = 4;
 const Blog = () => {
     return (
-        // <div className='container mx-auto grid lg:grid-cols-2 md:grid-cols-1 gap-3 mt-10 border'>
-        //     <div className='shadow-lg text-white shadow-slate-400 p-4 mt-4 border bg-gray-800 '>
-        //         <h2 className='font-bold text-2xl capitalize '>what is purpose to use router in react</h2>
-        //         <p>React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.</p>
-        //     </div>
-        //     <div className='shadow-lg shadow-slate-400 p-4 mt-4 border'>
-        //         <h2 className='font-bold text-2xl capitalize '>what is purpose to use router in react</h2>
-        //         <p>React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.</p>
-        //     </div>
-        //     <div className='shadow-lg shadow-slate-400 p-4 mt-4 border'>
-        //         <h2 className='font-bold text-2xl capitalize '>what is purpose to use router in react</h2>
-        //         <p>React Router is a standard library for routing in React. It enables the navigation among views of various components in a React Application, allows changing the browser URL, and keeps the UI in sync with the URL.</p>
-        //     </div>
-        // </div>
         <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div className="grid gap-10 row-gap-8 lg:grid-cols-5">
                 <div className="lg:col-span-2 border border-orange-700 p-1 bg-gray-900 rounded ">
