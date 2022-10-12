@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 
 const Loadquiz = ({ single }) => {
     // console.log(single)
@@ -11,13 +13,14 @@ const Loadquiz = ({ single }) => {
         alert('right')
     }
     return (
-        <div className='col-span-2 my-3 bg-slate-400'>
-            <div>
-                {question}
+        <div className='col-span-2 w-9/12 mx-auto rounded-lg p-4 my-3 bg-slate-400'>
+            <div className='flex justify-between'>
+                <h2 className='capitalize font-bold text-lg'>{question}</h2>
+                <p className='cursor-pointer'><FontAwesomeIcon icon={faCoffee} /></p>
             </div>
             <div className='flex flex-col'>
                 {
-                    options.map(option => <button onClick={() => setCount(option)} className={`bg-green-500 my-2 ${option === correctAnswer ? ' focus:bg-zinc-900' : 'focus:bg-red-600'}`}>{option}</button>)
+                    options.map(option => <button onClick={() => setCount(option)} className={`w-9/12 mx-auto capitalize font-semibold py-2 rounded-lg bg-green-500 my-2 ${option === correctAnswer ? ' focus:bg-zinc-900' : 'focus:bg-red-600'}`}>{option}</button>)
                 }
             </div>
         </div >
